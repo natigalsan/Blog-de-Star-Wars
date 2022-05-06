@@ -2,6 +2,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
 			people: [],
+			vehicles: [],
+			planets: [],
 			demo: [
 				{
 					title: "FIRST",
@@ -25,13 +27,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 				.then (response => response.json())      //entonces cuando esta pagina se cargue voy a tener una respuesta que se va a retornar en formato "json"
 				.then (data => {console.log(data.results)
 					setStore({people:data.results})		//agrego una nueva acción y digo que mi función setStore, me va a modificar algo dentro del "store", al elemento 'people' queremos que modifique, el data.results xk este es el arreglo
+					
 				
 				})	//cuando los datos ya sean "json", haré un console.log()
 				.catch (error => console.log("DANGER, DANER", error))   //en caso de error me voy al .catch mostrando el mensaje de error
-
-
-
-
 
 
 				/**
@@ -40,6 +39,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 				
 
 			},
+			loadSomeVehicles: async () => {
+				await fetch ('https://swapi.dev/api/vehicles')
+				.then (response => response.json())
+				.then (data => {console.log(data.results)
+					setStore({vehicles:data.results})
+				})
+				.catch (error => console.log("DANGER, DANGER", error))
+
+
+
+			},
+
 			changeColor: (index, color) => {
 				//get the store
 				const store = getStore();
