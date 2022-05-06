@@ -1,6 +1,7 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			people: [],
 			demo: [
 				{
 					title: "FIRST",
@@ -19,10 +20,25 @@ const getState = ({ getStore, getActions, setStore }) => {
 			exampleFunction: () => {
 				getActions().changeColor(0, "green");
 			},
-			loadSomeData: () => {
+			loadSomeData: async () => {		 //vamos a poner async (asíncrona xk puede que tarde) de esta manera se ejecuta en segundo plano y cuando esté lista nos entregará la respuesta.
+				await fetch ('https://swapi.dev/api/people')
+				.then (response => response.json())      //entonces cuando esta pagina se cargue voy a tener una respuesta que se va a retornar en formato "json"
+				.then (data => {console.log(data.results)
+					setStore({people:data.results})		//agrego una nueva acción y digo que mi función setStore, me va a modificar algo dentro del "store", al elemento 'people' queremos que modifique, el data.results xk este es el arreglo
+				
+				})	//cuando los datos ya sean "json", haré un console.log()
+				.catch (error => console.log("DANGER, DANER", error))   //en caso de error me voy al .catch mostrando el mensaje de error
+
+
+
+
+
+
 				/**
 					fetch().then().then(data => setStore({ "foo": data.bar }))
 				*/
+				
+
 			},
 			changeColor: (index, color) => {
 				//get the store

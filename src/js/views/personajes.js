@@ -1,25 +1,22 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
+import {Card} from "./views/card.js";
 
-
-export const Personajes = (props) => {
+export const Personajes = () => {
 
     return <div>
 
         {/*para visualizar mi componente CARD he de llamarla dentro de personajes.js: <Card  key....i...store...tal tal tal ver video/>*/}
         {/*y despues crear un fech que me genere el contenido de las card y luego con las card ponerle los atributos, ver videos: */}
-
-        {/* <div className="card" style={{width: "18rem"}}>
-            <img className="card-img-top" src={props.img} alt="Card image cap"/>
-            <div className="card-body">
-                <h5 className="card-title">{props.title}</h5>
-                <p className="card-text">{props.text}</p>
-                <Link to = "/">
-                    <button>Learn more</button>
-                </Link>
-                {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
-            </div>
-        </div>   */}
+        <h1 className="tituloPeople">Starwars Blog</h1>
+        <p>"Entrénate a tí mismo para dejar ir todo aquello que temes perder" - Yoda</p>
+        
+        {
+            store.people?.map((obj, i) => {
+                return <Card name = {obj.name} gender ={obj.gender}/>
+            })
+        }
+        
 
 
     </div>
