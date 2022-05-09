@@ -16,8 +16,6 @@ export const Card_planets = (props) => {
                 <p className="card-text"><strong>Model:</strong>{" "+props.model}</p>
                 <p className="card-text"><strong>Manufacturer:</strong>{" "+props.manufacturer}</p>
                 <p className="card-text"><strong>Climate:</strong>{" "+props.climate}</p>
-                <p className="card-text"><strong>Gravity:</strong>{" "+props.gravity}</p>
-                <p className="card-text"><strong>Gender:</strong>{" "+props.climate}</p>
 
 
                 <Link to = "/">
