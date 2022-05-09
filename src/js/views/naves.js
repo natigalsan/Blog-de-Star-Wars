@@ -1,6 +1,6 @@
 import React, {useContext} from "react"; 
 import { Link } from "react-router-dom";
-import {Card} from "../component/card.js";
+import {Card_naves} from "../component/card_naves.js";
 import { Context } from "../store/appContext";
 import uno from "../../img/img SW/1sand_crawler.jpg";
 import dos from "../../img/img SW/2T-16.jpg";
@@ -20,7 +20,7 @@ export const Naves = () => {
     return <div>
         <div className="container-fluid">
             <div className="headerPersonajes" id = "headerPersonajes">
-                <h1 className="tituloPeople" id = "headerh1" style={{color: "orange"}}><strong>Starwars Blog</strong></h1>
+                <h1 className="tituloPeople" id = "headerh1" style={{color: "orange"}}><strong>Naves Star Wars </strong></h1>
                 <h5 style={{color: "white"}}>"Entrénate a tí mismo para dejar ir todo aquello que temes perder" - Yoda</h5>
             </div>
         </div>
@@ -28,7 +28,7 @@ export const Naves = () => {
              <div className="posicionCard" >
             {
                 store.vehicles?.map((objeto, index) => {
-                    return <Card name = {objeto.name} model ={objeto.model} manufacturer = {objeto.manufacturer} i ={index} img = {fotos[index]}/> 
+                    return <Card_naves name = {objeto.name} model ={objeto.model} manufacturer = {objeto.manufacturer} i ={index} img = {fotos[index]}/> 
                 })
             }
              </div>
