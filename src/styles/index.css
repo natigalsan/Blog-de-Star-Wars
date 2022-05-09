@@ -23,7 +23,13 @@
 
 body {
     background-color: white;
+    background-image: url("https://i.pinimg.com/originals/cb/b8/7a/cbb87a525b0eb0e4f02bf22b7d366459.jpg");
+    background-size: cover;
 }
 #navbar {
     background-color: rgba(0, 0, 0, 0.711) !important;
+}
+
+.posicionCard {
+    display: inline-flex;
 }

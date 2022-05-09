@@ -50,6 +50,14 @@ const getState = ({ getStore, getActions, setStore }) => {
 
 
 			},
+			loadSomePlanets: async () =>{
+				await fetch ('https://swapi.dev/api/planets')
+				.then (response => response.json())
+				.then (data => {console.log(data.results)
+					setStore({planets: data.results})
+				})
+				.catch (error => console.log("DANGER, DANGER", error))
+			},
 
 			changeColor: (index, color) => {
 				//get the store

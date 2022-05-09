@@ -20,8 +20,8 @@ export const Navbar = () => {
 				<Link to = "/naves">
 					<span className="navesSW">Naves</span>
 				</Link>
-				<Link to = "/planetasSW">
-					<span className="navesSW">Planetas</span>
+				<Link to = "/planets">
+					<span className="planetasSW">Planetas</span>
 				</Link>
 
 			{/*Este link es para los FAVORITOS AUNQUE HE DE MODIFICAR A DONDE DEBE IR: */}			
