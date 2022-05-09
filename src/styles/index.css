@@ -33,3 +33,8 @@ body {
 .posicionCard {
     display: inline-flex;
 }
+#fotos {
+    max-width: 100%;
+    
+
+}

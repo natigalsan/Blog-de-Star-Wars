@@ -15,7 +15,7 @@ export const Card_personajes = (props) => {
                 <p className="card-text"><strong>Gender:</strong>{" "+props.gender}</p>
 
 
-                <Link to = "/learnMorePersonajes">
+                <Link to = {"/personajes/learnMorePj/"+ props.i}>
                     <button className="btn btn-primary">Learn more</button>
                 </Link>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}

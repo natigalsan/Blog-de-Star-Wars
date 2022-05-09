@@ -8,7 +8,7 @@ export const Personajes = () => {
     const {store, action} = useContext (Context); 
 
     return <div>
-        <div className="container-fluid"  >
+        <div className="container-fluid">
 
             {/*para visualizar mi componente CARD he de llamarla dentro de personajes.js: <Card  key....i...store...tal tal tal ver video/>*/}
             {/*y despues crear un fech que me genere el contenido de las card y luego con las card ponerle los atributos, ver videos: */}
