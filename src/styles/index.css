@@ -2,10 +2,11 @@
     General Styles
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Tapestry&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Tapestry&display=swap" );
 
 *{
-    font-family: 'Tapestry', cursive;
+    font-family: 'Lora', serif;
+    
 }
 
 #headerPersonajes {
@@ -38,3 +39,12 @@ body {
     
 
 }
+#thead{
+    color: orange; 
+}ç
+#tbody{
+    color: rgba(255, 255, 255, 0.855); 
+}
+/* #LMpj{
+    max-height: 100%;
+} */

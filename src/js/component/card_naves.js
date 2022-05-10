@@ -17,7 +17,7 @@ export const Card_naves = (props) => {
                 <p className="card-text"><strong>Length:</strong>{" "+props.length}</p>
 
 
-                <Link to = "/">
+                <Link to = {"/naves/LMnaves/"+ props.index}>
                     <button className="btn btn-primary">Learn more</button>
                 </Link>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}

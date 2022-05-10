@@ -35,14 +35,6 @@ export const Naves = () => {
 
         </div>
 
-       
-       
-       
-        
-
-
-
-
     </div>
 
 }

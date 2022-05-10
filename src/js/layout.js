@@ -13,6 +13,7 @@ import { Personajes } from "./views/personajes";
 import { Naves } from "./views/naves";
 import {Planets} from "./views/planets"; 
 import { LearnMorePj } from "./component/LearMorePj";
+import { LMnaves } from "./component/LMnaves";
 
 //create your first component
 const Layout = () => {
@@ -37,6 +38,9 @@ const Layout = () => {
 						</Route>
 						<Route exact path="/naves">
 							<Naves />
+						</Route>
+						<Route exact path="/naves/LMnaves/:index">
+							<LMnaves />
 						</Route>
 						<Route exact path="/planets">
 							<Planets />
