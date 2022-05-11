@@ -16,7 +16,7 @@ export const LMnaves = () => {
                 <div className="container-fluid row">
                     <div className="col-3" style = {{paddingLeft: "0", display: "flex", justifyContent: "left", alignContent: "left", backgroundColor: "white"}}>
                         
-                        <img className="foto-img-top" id = "fotos" src={store.vehicles.fotos[parametro.index]} />---------------------------------------
+                        <img className="foto-img-top" id = "fotos1" src={store.vehicles[fotos[parametro.index]]} />---------------------------------------
 
                     </div>
                     <div className="col-7" style = {{backgroundColor: "white"}}>
@@ -28,9 +28,9 @@ export const LMnaves = () => {
                     
                     <div className="info col-2" >                                               
                      
-                        <table className="" style = {{color: "white"}}>
+                        <table>
                         
-                            <thead  id ={"thead"}>
+                            <thead  id ="thead">
                                 <tr>
                                     <th scope="col">APARIENCIA</th>
                                 </tr>
@@ -38,32 +38,40 @@ export const LMnaves = () => {
                             </thead>
                             <tbody id= "tbody">
                                     <tr>
-                                        <th scope="col">Height:</th>
-                                        <td>{store.vehicles[parametro.index]?.height +" "+"cm"}</td>
+                                        <th scope="col">Model:</th>
+                                        <td>{store.vehicles[parametro.index]?.model}</td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">Mass:</th>
-                                        <td>{store.vehicles[parametro.index]?.mass +" "+"kg"}</td>
+                                        <th scope="col">Manufacturer:</th>
+                                        <td>{store.vehicles[parametro.index]?.manufacturer}</td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">Hair color:</th>
-                                        <td>{store.vehicles[parametro.index]?.hair_color}</td>
+                                        <th scope="col">Cost in credits:</th>
+                                        <td>{store.vehicles[parametro.index]?.cost_in_credits}</td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">Skin color:</th>
-                                        <td>{store.vehicles[parametro.index]?.skin_color}</td>
+                                        <th scope="col">Length:</th>
+                                        <td>{store.vehicles[parametro.index]?.length}</td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">Eye color:</th>
-                                        <td>{store.vehicles[parametro.index]?.eye_color}</td>
+                                        <th scope="col">Max atmosphering speed:</th>
+                                        <td>{store.vehicles[parametro.index]?.max_atmosphering_speed}</td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">Birth year:</th>
-                                        <td>{store.vehicles[parametro.index]?.birth_year}</td>
+                                        <th scope="col">Crew:</th>
+                                        <td>{store.vehicles[parametro.index]?.crew}</td>
                                     </tr>
                                     <tr>
-                                        <th scope="col">Gender:</th>
-                                        <td>{store.vehicles[parametro.index]?.gender}</td>
+                                        <th scope="col">Passengers:</th>
+                                        <td>{store.vehicles[parametro.index]?.passengers}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Consumables:</th>
+                                        <td>{store.vehicles[parametro.index]?.consumables}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col">Vehicle class:</th>
+                                        <td>{store.vehicles[parametro.index]?.vehicle_class}</td>
                                     </tr>
                                    
 

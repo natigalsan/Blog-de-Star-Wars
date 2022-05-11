@@ -28,7 +28,7 @@ export const LearnMorePj = () => {
                      
                         <table class="" style = {{color: "white"}}>
                         
-                            <thead  id ={"thead"}>
+                            <thead  id ="thead">
                                 <tr>
                                     <th scope="col">APARIENCIA</th>
                                 </tr>

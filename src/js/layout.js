@@ -14,6 +14,7 @@ import { Naves } from "./views/naves";
 import {Planets} from "./views/planets"; 
 import { LearnMorePj } from "./component/LearMorePj";
 import { LMnaves } from "./component/LMnaves";
+import {LMplanets} from "./component/LMplanets";
 
 //create your first component
 const Layout = () => {

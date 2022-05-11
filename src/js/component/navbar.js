@@ -15,13 +15,13 @@ export const Navbar = () => {
 			</Link>
 				{/*estos link son para personajes + naves + planetas*/} 
 				<Link to = "/personajes">
-					<span className="personajesSW">Personajes</span>
+					<span className="personajesSW" id ="headernb">Personajes</span>
 				</Link>
 				<Link to = "/naves">
-					<span className="navesSW">Naves</span>
+					<span className="navesSW" id ="headernb">Naves</span>
 				</Link>
 				<Link to = "/planets">
-					<span className="planetasSW">Planetas</span>
+					<span className="planetasSW" id ="headernb">Planetas</span>
 				</Link>
 
 			{/*Este link es para los FAVORITOS AUNQUE HE DE MODIFICAR A DONDE DEBE IR: */}			

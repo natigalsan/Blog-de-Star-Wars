@@ -43,7 +43,10 @@ body {
     color: orange; 
 }ç
 #tbody{
-    color: rgba(255, 255, 255, 0.855); 
+    color: white;
+}
+#headernb{
+    color: orange;
 }
 /* #LMpj{
     max-height: 100%;
