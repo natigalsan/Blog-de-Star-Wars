@@ -18,9 +18,10 @@ export const Card_planets = (props) => {
                 <p className="card-text"><strong>Climate:</strong>{" "+props.climate}</p>
 
 
-                <Link to = "/">
+                <Link to ={"/planets/LMplanets/"+ props.ind }>
                     <button className="btn btn-primary">Learn more</button>
                 </Link>
+                <button className="btn btn-danger"><i class="far fa-heart"></i></button>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
         </div>

@@ -17,7 +17,7 @@ export const Planets = () => {
                  <div className="posicionCard" >
                 {
                     store.planets?.map((obx, ind) => {
-                        return <Card_planets name = {obx.name} climate ={obx.climate} gravity ={obx.gravity} i ={ind} img = {`https://starwars-visualguide.com/assets/img/planets/${ind+1}.jpg`}/> // {i+1} porque empieza en la posición 0, de esta manera el primer personaje empezará en el 1
+                        return <Card_planets name = {obx.name} climate ={obx.climate} gravity ={obx.gravity} ind ={ind} img = {`https://starwars-visualguide.com/assets/img/planets/${ind+1}.jpg`}/> // {i+1} porque empieza en la posición 0, de esta manera el primer personaje empezará en el 1
                     })
                 }
                 </div>

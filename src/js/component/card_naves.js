@@ -11,15 +11,16 @@ export const Card_naves = (props) => {
 
             alt="Card image cap"/>
             <div className="card-body">
-                <h4 className="card-title" style={{color: "blue"}}>{props.name}</h4>
+                <h4 className="card-title" style={{color: "black"}}><strong>{props.name}</strong></h4>
                 <p className="card-text"><strong>Model:</strong>{" "+props.model}</p>
                 <p className="card-text"><strong>Manufacturer:</strong>{" "+props.manufacturer}</p>
                 <p className="card-text"><strong>Length:</strong>{" "+props.length}</p>
 
 
                 <Link to = {"/naves/LMnaves/"+ props.index}>
-                    <button className="btn btn-primary">Learn more</button>
+                    <button className="btn btn-warning">Learn more</button>
                 </Link>
+                <button className="btn btn-danger"><i class="far fa-heart"></i></button>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
         </div>

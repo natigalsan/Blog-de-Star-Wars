@@ -28,7 +28,7 @@ export const Naves = () => {
              <div className="posicionCard" >
             {
                 store.vehicles?.map((objeto, index) => {
-                    return <Card_naves name = {objeto.name} model ={objeto.model} manufacturer = {objeto.manufacturer} i ={index} img = {fotos[index]}/> 
+                    return <Card_naves name = {objeto.name} model ={objeto.model} manufacturer = {objeto.manufacturer} index ={index} img = {fotos[index]}/> 
                 })
             }
              </div>

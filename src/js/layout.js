@@ -45,6 +45,9 @@ const Layout = () => {
 						<Route exact path="/planets">
 							<Planets />
 						</Route>
+						<Route exact path="/planets/LMplanets/:ind">
+							<LMplanets />
+						</Route>
 						<Route exact path="/demo">
 							<Demo />
 						</Route>
