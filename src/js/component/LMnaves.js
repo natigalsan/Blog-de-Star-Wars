@@ -2,6 +2,16 @@ import React, {useContext} from "react"; //debo capturar el hook usePArams
 import { Link } from "react-router-dom";
 import { Context } from "../store/appContext";
 import { useParams } from "react-router-dom";
+import uno from "../../img/img SW/1sand_crawler.jpg";
+import dos from "../../img/img SW/2T-16.jpg";
+import tres from "../../img/img SW/3X-34.jpg";
+import cuatro from "../../img/img SW/4TIE_LN.jpg";
+import cinco from "../../img/img SW/5snowspeeder.jpg";
+import seis from "../../img/img SW/6TIE_bomber.jpg";
+import siete from "../../img/img SW/7AT_AT.jpg";
+import ocho from "../../img/img SW/8AT_ST.jpg";
+import nueve from "../../img/img SW/9Storm_IV.jpg";
+import diez from "../../img/img SW/10Sall_barge.jpg";
 
 export const LMnaves = () => {
         let fotos = [uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez]

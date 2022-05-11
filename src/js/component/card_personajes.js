@@ -18,7 +18,7 @@ export const Card_personajes = (props) => {
                 <Link to = {"/personajes/learnMorePj/"+ props.i}>
                     <button className="btn btn-warning">Learn more</button>
                 </Link>
-                <button className="btn btn-danger"><i class="far fa-heart"></i></button>
+                <button className="btn btn-light"><i class="far fa-heart"></i></button>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
                 

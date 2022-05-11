@@ -15,7 +15,7 @@ export const LMplanets= () => {
                     <div className="col-3" style = {{paddingLeft: "0", display: "flex", justifyContent: "left", alignContent: "left", backgroundColor: "white"}}>
                         
                     <img className="card-img-top" src= {`https://starwars-visualguide.com/assets/img/planets/${Number(parametro.ind)+1}.jpg`}/>
-{parametro.ind}/>
+{/* {parametro.ind}/> */}
 
                     </div>
                     <div className="col-7" style = {{backgroundColor: "white"}}>

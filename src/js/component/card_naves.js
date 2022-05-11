@@ -1,7 +1,9 @@
-import React from "react"; 
+import React, {useContext} from "react"; 
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Card_naves = (props) => {
+    const {store, actions} = useContext(Context);
 
     return <div>
 
@@ -18,9 +20,13 @@ export const Card_naves = (props) => {
 
 
                 <Link to = {"/naves/LMnaves/"+ props.index}>
-                    <button className="btn btn-warning">Learn more</button>
+                    <button className="btn btn-warning"
+                    onClick={()=>{
+
+                    }}
+                    >Learn more</button>
                 </Link>
-                <button className="btn btn-danger"><i class="far fa-heart"></i></button>
+                <button className="btn btn-light"><i class="far fa-heart"></i></button>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
         </div>

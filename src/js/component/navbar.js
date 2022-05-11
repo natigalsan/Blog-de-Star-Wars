@@ -25,12 +25,13 @@ export const Navbar = () => {
 				</Link>
 
 			{/*Este link es para los FAVORITOS AUNQUE HE DE MODIFICAR A DONDE DEBE IR: */}			
-			<div className="ml-auto">
-				<Link to="/demo">
-					<button type="button" className="btn btn-primary">
-						Favorites <span class="badge badge-light">4</span>
-					</button>
-				</Link>
+			<div class="btn-group dropstart">
+				<button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+					Dropstart
+				</button>
+				<ul class="dropdown-menu">
+					<span>Sin favoritos</span>
+				</ul>
 			</div>
 		</nav>
 	);

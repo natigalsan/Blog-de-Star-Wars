@@ -1,6 +1,9 @@
 const getState = ({ getStore, getActions, setStore }) => {
 	return {
 		store: {
+			favP: [],
+			favnaves: [],
+			favpl: [],
 			people: [],
 			vehicles: [],
 			planets: [],
@@ -33,10 +36,10 @@ const getState = ({ getStore, getActions, setStore }) => {
 				.catch (error => console.log("DANGER, DANER", error))   //en caso de error me voy al .catch mostrando el mensaje de error
 
 
-				/**
-					fetch().then().then(data => setStore({ "foo": data.bar }))
-				*/
-				
+						
+
+			},
+			addFav: () =>{
 
 			},
 			loadSomeVehicles: async () => {

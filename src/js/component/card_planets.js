@@ -21,7 +21,7 @@ export const Card_planets = (props) => {
                 <Link to ={"/planets/LMplanets/"+ props.ind }>
                     <button className="btn btn-warning">Learn more</button>
                 </Link>
-                <button className="btn btn-danger"><i class="far fa-heart"></i></button>
+                <button className="btn btn-light"><i class="far fa-heart"></i></button>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
         </div>
