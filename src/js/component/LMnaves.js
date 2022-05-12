@@ -26,8 +26,8 @@ export const LMnaves = () => {
                 <div className="container-fluid row">
                     <div className="col-3" style = {{paddingLeft: "0", display: "flex", justifyContent: "left", alignContent: "left", backgroundColor: "white"}}>
                         
-                        <img className="foto-img-top" id = "fotos1" src={store.vehicles[fotos[parametro.index]]} />---------------------------------------
-
+                        <img className="foto-img-top" id = "fotos1" src={fotos[store.vehicles[parametro.index]]} /> 
+                        {/* src={store.vehicles[fotos[parametro.index]]} */}
                     </div>
                     <div className="col-7" style = {{backgroundColor: "white"}}>
                         <h2 className="Datos" style= {{marginTop: "20px",color: "orange", fontSize: "150%"}}>{store.vehicles[parametro.index]?.name}</h2> 

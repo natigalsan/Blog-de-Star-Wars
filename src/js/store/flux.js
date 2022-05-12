@@ -41,14 +41,18 @@ const getState = ({ getStore, getActions, setStore }) => {
 			},
 			addFav: (name) =>{
 				
-						<input
-							className="d-flex justify-content-center"
-							id="Entrada"
-							type="text"
-							onChange={(e) => setInput(e.target.value)}
-							value={input}
-							placeholder="Please, write something." //capturo el elemtno en el input
-						/>
+				
+
+
+
+						// <input
+						// 	className="d-flex justify-content-center"
+						// 	id="Entrada"
+						// 	type="text"
+						// 	onChange={(e) => setInput(e.target.value)}
+						// 	value={input}
+						// 	placeholder="Please, write something." //capturo el elemtno en el input
+						// />
 								
 
 
