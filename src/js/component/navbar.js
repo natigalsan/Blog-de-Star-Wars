@@ -5,6 +5,7 @@ import {Context} from "../store/appContext";
 
 
 export const Navbar = () => {
+	const {store, actions} = useContext(Context);
 	return (
 		<nav className="navbar navbar-light bg-light mb-3" id = "navbar">
 			
@@ -30,7 +31,29 @@ export const Navbar = () => {
 					Dropstart
 				</button>
 				<ul class="dropdown-menu">
-					<span>Sin favoritos</span>
+					<span>{store.favP.length ==0 ? "Sin favoritos": 
+					store.favP.map((name, i) => {
+						return <ul>
+							<li key={i}>{name}<button>delete</button></li>
+						</ul>
+					}) 					
+					}</span>
+					<span>{store.favnaves.length ==0 ? "": 
+					store.favnaves.map((name, index) => {
+						return <ul>
+							<li key={index}>{name}</li>
+						</ul>
+					}) 					
+					}</span>
+
+					<span>{store.favpl.length ==0 ? "": 
+					store.favpl.map((name, ind) => {
+						return <ul>
+							<li key={ind}>{name}</li>
+						</ul>
+					}) 					
+					}</span>
+					
 				</ul>
 			</div>
 		</nav>
