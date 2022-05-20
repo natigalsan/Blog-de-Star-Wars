@@ -7,7 +7,7 @@ export const Card_planets = (props) => {
 
         <div className="card" style={{minWidth: "300px"}} id = "cardsSW">
             <img className="card-img-top" src={props.img} 
-            // onError ={e =>{e.target}}
+            onError ={e =>{e.target = 'https://concepto.de/wp-content/uploads/2014/08/universo-e1551279332781.jpg'; e.target.onError = null;}}
 
             alt="Card image cap"/>
             <div className="card-body">
