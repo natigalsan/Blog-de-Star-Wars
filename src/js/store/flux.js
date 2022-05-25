@@ -35,24 +35,22 @@ const getState = ({ getStore, getActions, setStore }) => {
 				})	//cuando los datos ya sean "json", haré un console.log()
 				.catch (error => console.log("DANGER, DANER", error))   //en caso de error me voy al .catch mostrando el mensaje de error
 
-
-						
+				
 
 			},
 			addFav: (name) =>{
-				
-				
 
+				const store = getStore();
+				// const demo = store.demo.map((name, i) => {
+				// 	if (i === index) elm.background = color;
+				// 	return elm;
+				// });
 
+				//reset the global store
+				// setStore({ demo: demo });
 
-						// <input
-						// 	className="d-flex justify-content-center"
-						// 	id="Entrada"
-						// 	type="text"
-						// 	onChange={(e) => setInput(e.target.value)}
-						// 	value={input}
-						// 	placeholder="Please, write something." //capturo el elemtno en el input
-						// />
+				//---------------------------------------
+					
 								
 
 

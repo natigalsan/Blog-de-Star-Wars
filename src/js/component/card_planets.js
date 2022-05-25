@@ -12,17 +12,15 @@ export const Card_planets = (props) => {
             alt="Card image cap"/>
             <div className="card-body">
                 <h4 className="card-title" style={{color: "black"}}><strong>{props.name}</strong></h4>
-                <p className="card-text"><strong>Gender:</strong>{" "+props.gender}</p>
-                <p className="card-text"><strong>Model:</strong>{" "+props.model}</p>
-                <p className="card-text"><strong>Manufacturer:</strong>{" "+props.manufacturer}</p>
-                <p className="card-text"><strong>Climate:</strong>{" "+props.climate}</p>
+                <p className="card-text"><strong>Orbital period:</strong>{" "+ props.orbital_period}</p>
+                <p className="card-text"><strong>Climate:</strong>{" "+ props.climate}</p>
+                <p className="card-text"><strong>Diameter:</strong>{" "+ props.diameter}</p>
 
 
                 <Link to ={"/planets/LMplanets/"+ props.ind }>
                     <button className="btn btn-warning">Learn more</button>
                 </Link>
                 <button className="btn btn-light"><i class="far fa-heart"></i></button>
-                {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
         </div>
 
