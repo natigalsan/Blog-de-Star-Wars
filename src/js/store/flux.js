@@ -61,6 +61,13 @@ const getState = ({ getStore, getActions, setStore }) => {
 				})
 				setStore({favP:newArray})
 			},
+			deleteFavN:(name)=>{
+				let newArray = getStore().favnaves.filter((valor)=> {
+					return valor != name;
+
+				})
+				setStore({favnaves:newArray})
+			},
 		
 
 
