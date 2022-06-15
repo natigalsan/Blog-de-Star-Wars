@@ -23,8 +23,7 @@ export const Card_personajes = (props) => {
                 </Link>
                 <button className="btn btn-light"
                 onClick={()=>{
-                    // actions.addFav(props.name);
-                    alert("Hola" + props.name);
+                    actions.addFavP(props.name);
                 }}
                 ><i class="far fa-heart"></i></button>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}

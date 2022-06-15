@@ -38,22 +38,28 @@ const getState = ({ getStore, getActions, setStore }) => {
 				
 
 			},
-			addFav: (name) =>{
+			addFavP: (name) =>{
 
-				const store = getStore();
-				// const demo = store.demo.map((name, i) => {
-				// 	if (i === index) elm.background = color;
-				// 	return elm;
-				// });
-
-				//reset the global store
-				// setStore({ demo: demo });
-
-				//---------------------------------------
-					
+				setStore({favP:[...getStore().favP, name]})		
 								
+			},
 
+			addFavN: (name) =>{
 
+				setStore({favnaves:[...getStore().favnaves, name]})		
+								
+			},
+			addFavPl: (name) =>{
+
+				setStore({favpl:[...getStore().favpl, name]})		
+								
+			},
+			deleteFavP:(name)=>{
+				let newArray = getStore().favP.filter((valor)=> {
+					return valor != name;
+
+				})
+				setStore({favP:newArray})
 			},
 		
 

@@ -34,14 +34,16 @@ export const Navbar = () => {
 					<span>{store.favP.length ==0 ? "Sin favoritos": 
 					store.favP.map((name, i) => {
 						return <ul>
-							<li key={i}>{name}<button>delete</button></li>
+							<li key={i}>{name}<button onClick={()=>{
+								{actions.deleteFavP(name)}
+							}}>delete</button></li>
 						</ul>
 					}) 					
 					}</span>
 					<span>{store.favnaves.length ==0 ? "": 
 					store.favnaves.map((name, index) => {
 						return <ul>
-							<li key={index}>{name}</li>
+							<li key={index}>{name}<button>delete</button></li>
 						</ul>
 					}) 					
 					}</span>
@@ -49,7 +51,7 @@ export const Navbar = () => {
 					<span>{store.favpl.length ==0 ? "": 
 					store.favpl.map((name, ind) => {
 						return <ul>
-							<li key={ind}>{name}</li>
+							<li key={ind}>{name}<button>delete</button></li>
 						</ul>
 					}) 					
 					}</span>

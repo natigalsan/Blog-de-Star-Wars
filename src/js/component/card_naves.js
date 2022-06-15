@@ -22,6 +22,7 @@ export const Card_naves = (props) => {
                 <Link to = {"/naves/LMnaves/"+ props.index}>
                     <button className="btn btn-warning"
                     onClick={()=>{
+                        actions.addFavN(props.name)
 
                     }}
                     >Learn more</button>
