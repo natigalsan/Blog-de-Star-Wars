@@ -1,7 +1,9 @@
 import React from "react"; 
 import { Link } from "react-router-dom";
+import { Context } from "../store/appContext";
 
 export const Card_planets = (props) => {
+    const {store, actions} = useContext(Context);
 
     return <div>
 
@@ -20,7 +22,11 @@ export const Card_planets = (props) => {
                 <Link to ={"/planets/LMplanets/"+ props.ind }>
                     <button className="btn btn-warning">Learn more</button>
                 </Link>
-                <button className="btn btn-light"><i class="far fa-heart"></i></button>
+                <button className="btn btn-light"
+                onClick={()=>{
+                    actions.addFavPl(props.name);
+                }}
+                ><i class="far fa-heart"></i></button>
             </div>
         </div>
 

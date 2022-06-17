@@ -21,13 +21,14 @@ export const Card_naves = (props) => {
 
                 <Link to = {"/naves/LMnaves/"+ props.index}>
                     <button className="btn btn-warning"
-                    onClick={()=>{
-                        actions.addFavN(props.name)
-
-                    }}
+                   
                     >Learn more</button>
                 </Link>
-                <button className="btn btn-light"><i class="far fa-heart"></i></button>
+                <button className="btn btn-light"
+                 onClick={()=>{
+                    actions.addFavN(props.name)
+
+                }}><i class="far fa-heart"></i></button>
                 {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
             </div>
         </div>
